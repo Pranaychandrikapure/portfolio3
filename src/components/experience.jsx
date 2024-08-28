@@ -2,10 +2,10 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
-import itsaWinner from '../assets/images/itsa_winner.png'
 import udmey_certificate from '../assets/images/Udmey_certificate.png'
 import oasis_infobyte from '../assets/images/Oasis_infobytes.png'
 import prajwalan from '../assets/images/prajwalan.png'
+import itsaWinner from '../assets/images/itsa_winner.png'
 
 const Experience = () => {
     return (
