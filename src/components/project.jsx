@@ -155,10 +155,10 @@ const Project = () => {
                     ></div>
                     <a
                         href="https://github.com/Pranaychandrikapure/DocWise-Application"
-                        className="order-1 sm:order-2 flex w-full relative justify-start sm:justify-start"
+                        className="order-1 sm:order-2 flex w-full relative justify-center sm:justify-start"
                     >
                         <div
-                            className="flex flex-col items-start relative group sm:hover:scale-105 ease-in-out duration-200 sm:ml-auto"
+                            className="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 sm:ml-auto"
                         >
                             <img
                                 className="max-w-[200px] mr-auto w-full relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
