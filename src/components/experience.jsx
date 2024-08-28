@@ -5,7 +5,7 @@ import 'swiper/swiper-bundle.css';
 import udmey_certificate from '../assets/images/Udmey_certificate.png'
 import oasis_infobyte from '../assets/images/Oasis_infobytes.png'
 import prajwalan from '../assets/images/prajwalan.png'
-import itsaWinner from '../assets/images/itsa_winner.png'
+import itsaWinner from '../assets/images/itsa_winner12.png'
 
 const Experience = () => {
     return (
