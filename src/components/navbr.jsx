@@ -71,42 +71,29 @@ const Navbar = () => {
             <p className="pointer-events-none font-['Merriweather'] my-5">
               Full Stack Developer
             </p>
-            <div className="w-50 h-10 mb-15">
-              <ul className="flex flex-wrap gap-2 mt-2 mb-5 w-[29rem]">
-                <li
-                  className="border rounded-[80px] border-[#999] px-[10px] py-[5px] text-sm md:text-base cursor-pointer hover:border-green-500"
-                >
-                  #Django
-                </li>
-                <li
-                  className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base cursor-pointer hover:border-blue-500"
-                >
-                  #React.js
-                </li>
-                <li
-                  className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base cursor-pointer hover:border-red-500"
-                >
-                  #Redux
-                </li>
-                <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base cursor-pointer hover:border-yellow-500">#HTML</li>
-                <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base cursor-pointer hover:border-blue-900">#CSS</li>
-                <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base cursor-pointer hover:border-orange-500">#JavaScript</li>
-                <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base cursor-pointer hover:border-blue-600">#Flutter</li>
-                <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base cursor-pointer hover:border-yellow-700"> #Firebase </li>
-                <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base cursor-pointer hover:border-pink-700"> #OCR </li>
-                <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base cursor-pointer hover:border-red-900"> #Node-RED </li>
-                <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base cursor-pointer hover:border-green-200">#SQl</li>
-                <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base cursor-pointer hover:border-blue-300">#C </li>
-                <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base cursor-pointer hover:border-red-200">#C++</li>
-                <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base cursor-pointer hover:border-green-500"> #Python </li>
-                <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base cursor-pointer hover:border-blue-500" > #Dart </li>
-              </ul>
-              <button
-                className="bg-[#92f8d6] py-2 px-5 mt-1 rounded font-extrabold bg-gradient-to-l from-[#2f82ff] to-[#170349e6] relative hover:bg-black hover:border-[2px] hover:border-[#020202]"
-              >
-                <a href="https://docs.google.com/uc?export=download&id=1EFt3dTY_o_KdK2-aORHZ8mnUKQJMweAk">Download Resume</a>
-              </button>
-            </div>
+            <div className="w-full md:w-1/2 h-10 mb-6 md:mb-15">
+  <ul className="flex flex-wrap gap-2 mt-2 mb-5 w-full md:w-[29rem]">
+    <li className="border rounded-[80px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-green-500">#Django</li>
+    <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-blue-500">#React.js</li>
+    <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-red-500">#Redux</li>
+    <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-yellow-500">#HTML</li>
+    <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-blue-900">#CSS</li>
+    <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-orange-500">#JavaScript</li>
+    <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-blue-600">#Flutter</li>
+    <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-yellow-700">#Firebase</li>
+    <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-pink-700">#OCR</li>
+    <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-red-900">#Node-RED</li>
+    <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-green-200">#SQL</li>
+    <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-blue-300">#C</li>
+    <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-red-200">#C++</li>
+    <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-green-500">#Python</li>
+    <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-blue-500">#Dart</li>
+  </ul>
+  <button className="bg-[#92f8d6] py-2 px-5 mt-1 rounded font-extrabold bg-gradient-to-l from-[#2f82ff] to-[#170349e6] relative hover:bg-black hover:border-[2px] hover:border-[#020202]">
+    <a href="https://docs.google.com/uc?export=download&id=1EFt3dTY_o_KdK2-aORHZ8mnUKQJMweAk">Download Resume</a>
+  </button>
+</div>
+
           </div>
         </div>
 

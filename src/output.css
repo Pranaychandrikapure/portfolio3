@@ -750,6 +750,10 @@ video {
   margin-top: 50px;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1606,6 +1610,11 @@ video {
     line-height: 1.5rem;
   }
 
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
   .sm\:after\:block::after {
     content: var(--tw-content);
     display: block;
@@ -1629,6 +1638,14 @@ video {
 
   .md\:w-\[180px\] {
     width: 180px;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:w-\[29rem\] {
+    width: 29rem;
   }
 
   .md\:max-w-\[800px\] {
