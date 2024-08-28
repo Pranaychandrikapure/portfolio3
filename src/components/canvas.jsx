@@ -1,5 +1,6 @@
 import loadjs from "loadjs";
 
+
 const Canvas = () => {
    loadjs("../src/fluid.js")
     return (
