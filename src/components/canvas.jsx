@@ -14,7 +14,7 @@ const Canvas = () => {
                             <span className="promo-close">&times;</span>
                         </div>
                         <div className="promo-body">
-                            <p>Try Fluid Simulation app!</p>
+    
                         </div>
                     </div>
                 </div>
