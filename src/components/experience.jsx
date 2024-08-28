@@ -4,10 +4,10 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 
 //images
-import user1 from '../assets/images/itsa_winner.png'
-import user2 from '../assets/images/Udmey_certificate.png'
-import user3 from '../assets/images/Oasis_infobytes.png'
-import user4 from '../assets/images/prajwalan.png'
+import itsaWinner from '../assets/images/itsa_winner.png'
+import udmey_certificate from '../assets/images/Udmey_certificate.png'
+import oasis_infobyte from '../assets/images/Oasis_infobytes.png'
+import prajwalan from '../assets/images/prajwalan.png'
 
 const Experience = () => {
     return (
@@ -36,7 +36,7 @@ const Experience = () => {
                                     >
                                         <img
                                             className="shrink-0 w-[120px] h-[120px] md:w-[180px] md:h-[180px] rounded-[20px] drop-shadow-[0_0px_80px_rgba(59,130,246,1)]"
-                                            src={user4}
+                                            src={prajwalan}
                                             alt="testimonial 3"
                                         />
                                         <div
@@ -65,7 +65,7 @@ const Experience = () => {
                                     >
                                         <img
                                             className="shrink-0 w-[120px] h-[180px] md:w-[180px] md:h-[180px] rounded-[20px] drop-shadow-[0_0px_80px_rgba(59,130,246,1)]"
-                                            src={user1}
+                                            src={itsaWinner}
                                             alt="testimonial 3"
                                         />
                                         <div
@@ -93,7 +93,7 @@ const Experience = () => {
                                     >
                                         <img
                                             className="shrink-0 w-[120px] h-[120px] md:w-[180px] md:h-[180px] rounded-[20px] drop-shadow-[0_0px_80px_rgba(59,130,246,1)]"
-                                            src={user2}
+                                            src={udmey_certificate}
                                             alt="testimonial 3"
                                         />
                                         <div
@@ -122,7 +122,7 @@ const Experience = () => {
                                     >
                                         <img
                                             className="shrink-0 w-[120px] h-[120px] md:w-[180px] md:h-[180px] rounded-[20px] drop-shadow-[0_0px_80px_rgba(59,130,246,1)]"
-                                            src={user3}
+                                            src={oasis_infobyte}
                                             alt="testimonial 3"
                                         />
                                         <div
