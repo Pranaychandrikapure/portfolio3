@@ -4,10 +4,10 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 
 //images
-import user1 from "../assets/images/itsa_winner.png"
-import user2 from "../assets/images/Udmey_certificate.png"
-import user3 from "../assets/images/Oasis_infobytes.png"
-import user4 from "../assets/images/prajwalan.png"
+import user1 from '../assets/images/itsa_winner.png'
+import user2 from '../assets/images/Udmey_certificate.png'
+import user3 from '../assets/images/Oasis_infobytes.png'
+import user4 from '../assets/images/prajwalan.png'
 
 const Experience = () => {
     return (
