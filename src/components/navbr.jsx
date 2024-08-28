@@ -5,7 +5,7 @@ const Navbar = () => {
     <>
     <section className="flex flex-col justify-between h-screen">
       <header className="z-20 pointer-events-none flex items-center justify-between w-full px-4 mt-4 max-w-screen-xl mx-auto"> 
-      <img src={logo} className="w-[6rem]" alt="Logo" />
+      <img src={logo} className="w-[8rem]" alt="Logo" />
 
 
 

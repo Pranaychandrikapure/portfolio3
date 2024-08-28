@@ -1,8 +1,18 @@
-import loadjs from "loadjs";
+// import loadjs from "loadjs";
+import { useEffect } from 'react';
 
 
 const Canvas = () => {
-   loadjs("../src/fluid.js")
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.src = "/fluid.js";  // Make sure this path is correct
+        script.async = true;
+        document.body.appendChild(script);
+    
+        return () => {
+          document.body.removeChild(script);
+        };
+      }, []);
     return (
         <div className="canv">
             <canvas ></canvas>
