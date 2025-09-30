@@ -93,7 +93,7 @@ const Navbar = () => {
     <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-blue-500">#Dart</li>
   </ul>
   <button className="bg-[#92f8d6] py-2 px-5 mt-1 rounded font-extrabold bg-gradient-to-l from-[#2f82ff] to-[#170349e6] relative hover:bg-black hover:border-[2px] hover:border-[#020202]">
-    <a href="https://docs.google.com/uc?export=download&id=1EFt3dTY_o_KdK2-aORHZ8mnUKQJMweAk">Download Resume</a>
+    <a href="https://drive.google.com/uc?id=1DaTCzsVR_FRxKXvZ3pMNU6s4KZ7F_Be4&export=download">Download Resume</a>
   </button>
 </div>
 
