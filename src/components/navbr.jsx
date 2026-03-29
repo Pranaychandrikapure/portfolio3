@@ -76,6 +76,12 @@ const Navbar = () => {
             </p>
             <div className="w-full md:w-1/2 h-10 mb-6 md:mb-15">
   <ul className="flex flex-wrap gap-2 mt-2 mb-5 w-full md:w-[29rem]">
+    <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-blue-300">#Java</li>
+    <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-blue-600">#Spring Boot</li>
+    <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-orange-500">#Angular</li>
+    <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-red-900">#Redis</li>
+    <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-blue-900">#PostgreSQL</li>
+    <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-blue-500">#Kafka</li>
     <li className="border rounded-[80px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-green-500">#Django</li>
     <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-blue-500">#React.js</li>
     <li className="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-xs sm:text-sm md:text-base cursor-pointer hover:border-red-500">#Redux</li>
