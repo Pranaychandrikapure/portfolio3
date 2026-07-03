@@ -50,7 +50,7 @@ const Navbar = () => {
           </ul>
           
           <a 
-            href="https://drive.google.com/uc?id=1DaTCzsVR_FRxKXvZ3pMNU6s4KZ7F_Be4&export=download" 
+            href="https://docs.google.com/uc?export=download&id=1DaTCzsVR_FRxKXvZ3pMNU6s4KZ7F_Be4" 
             className="bg-gradient-btn"
             style={{ display: 'inline-block', marginTop: '1rem' }}
           >
