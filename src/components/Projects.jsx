@@ -13,7 +13,7 @@ const projectsData = [
     description: "A real-time bidding application for cricket players. Features live websocket connections for instant bid updates, a secure admin panel, and high-performance React UI.",
     tech: ["React", "Node.js", "WebSockets", "MongoDB"],
     img: cricketAuctionImg,
-    link: "#",
+    link: "https://cricket-auction-prj.vercel.app/",
     color: "#e63946"
   },
   {
@@ -22,7 +22,7 @@ const projectsData = [
     description: "A fully functional e-commerce backend powered by Django. Handles complex relational models for products, carts, and user authentication with high security standards.",
     tech: ["Django", "Python", "PostgreSQL", "REST API"],
     img: nestImg,
-    link: "#",
+    link: "https://github.com/Pranaychandrikapure/Django-Ecommerce",
     color: "#2a9d8f"
   },
   {
@@ -31,7 +31,7 @@ const projectsData = [
     description: "An elegant, interactive portfolio website showcasing team projects. Built with modern web technologies focusing on extreme performance and accessibility.",
     tech: ["React", "Framer Motion", "Tailwind CSS"],
     img: nayaanImg,
-    link: "#",
+    link: "https://nayaan.vercel.app/",
     color: "#e9c46a"
   }
 ];
