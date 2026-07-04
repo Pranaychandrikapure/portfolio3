@@ -185,6 +185,12 @@ section {
   letter-spacing: 2px;
 }
 
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  text-align: left;
+}
+
 /* Experience Section */
 .experience-container {
   display: flex;
@@ -214,6 +220,37 @@ section {
 
 .experience-card {
   position: relative;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.experience-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience-card h4 {
+  color: var(--accent-cyan);
+  margin-bottom: 1rem;
+}
+
+.experience-card h4 span {
+  color: #666;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.experience-card ul {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.experience-card li {
+  margin-bottom: 8px;
 }
 
 .experience-dot {
@@ -384,6 +421,11 @@ section {
   .hero p {
     font-size: 1rem;
     margin-bottom: 2rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem !important;
+    margin-bottom: 2.5rem !important;
   }
 
   .experience-container {

@@ -9,14 +9,13 @@ const ExperienceCard = ({ role, company, date, descriptions }) => {
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.6 }}
-      style={{ padding: '2rem', marginBottom: '2rem' }}
     >
       <div className="experience-dot" />
-      <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{role}</h3>
-      <h4 style={{ color: 'var(--accent-cyan)', marginBottom: '1rem' }}>{company} <span style={{ color: '#666', fontSize: '0.9rem', marginLeft: '10px' }}>{date}</span></h4>
-      <ul style={{ color: 'var(--text-secondary)', lineHeight: '1.6', paddingLeft: '20px', margin: 0 }}>
+      <h3>{role}</h3>
+      <h4>{company} <span>{date}</span></h4>
+      <ul>
         {descriptions.map((desc, i) => (
-          <li key={i} style={{ marginBottom: '8px' }}>{desc}</li>
+          <li key={i}>{desc}</li>
         ))}
       </ul>
     </motion.div>
@@ -39,10 +38,10 @@ const Experience = () => {
   return (
     <section id="experience" ref={ref}>
       <motion.h2 
+        className="section-title"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        style={{ fontSize: '3rem', marginBottom: '4rem' }}
       >
         Work <span className="text-gradient">Experience</span>
       </motion.h2>
