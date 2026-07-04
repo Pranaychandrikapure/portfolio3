@@ -16,10 +16,9 @@ const Hero = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <h2>Hello, I'm <span className="text-gradient">Pranay</span></h2>
-        <h1>FULL STACK<br/>DEVELOPER</h1>
-        <p>
-          I build high-performance web applications, scalable backends, and beautiful user interfaces. 
-          Currently specializing in React, Node.js, and Django.
+        <h1>SOFTWARE<br/>ENGINEER</h1>
+        <p style={{ maxWidth: '800px' }}>
+          Software Engineer with experience in developing scalable enterprise applications using Java, Spring Boot, PostgreSQL, Redis, Kafka, and Akka. Currently working on large-scale commodity trading and eAuction platforms at NCDEX e-Markets Ltd. Experienced in designing REST APIs, microservices, real-time event-driven systems, and distributed architectures. Passionate about backend engineering, system design, and high-performance applications.
         </p>
         <a 
           href="https://docs.google.com/uc?export=download&id=1DaTCzsVR_FRxKXvZ3pMNU6s4KZ7F_Be4" 
@@ -29,7 +28,6 @@ const Hero = () => {
           style={{ 
             display: 'inline-block', 
             padding: '12px 28px', 
-            marginTop: '2rem', 
             color: 'var(--accent-cyan)', 
             textDecoration: 'none', 
             fontWeight: '600', 

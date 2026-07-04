@@ -139,13 +139,16 @@ section {
 
 /* Hero Section */
 .hero {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   position: relative;
   overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .hero h1 {
@@ -169,7 +172,7 @@ section {
   max-width: 600px;
   line-height: 1.6;
   color: #888;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .scroll-indicator {
@@ -420,7 +423,7 @@ section {
 
   .hero p {
     font-size: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .section-title {
