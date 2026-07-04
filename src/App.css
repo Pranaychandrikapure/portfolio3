@@ -398,11 +398,29 @@ section {
   }
 
   .experience-card {
-    padding: 1.5rem !important;
+    padding: 1.2rem !important;
+    word-break: break-word;
   }
   
   .experience-card h3 {
     font-size: 1.2rem !important;
+  }
+
+  .experience-card h4 {
+    font-size: 1rem !important;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .experience-card h4 span {
+    margin-left: 0 !important;
+    font-size: 0.85rem !important;
+  }
+
+  .experience-card ul {
+    font-size: 0.9rem !important;
+    padding-left: 15px !important;
   }
 
   .project-card {
