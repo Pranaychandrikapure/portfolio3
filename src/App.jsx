@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import Lenis from 'lenis';
 import Background from './components/Background';
 import Hero from './components/Hero';
-import Experience from './components/Experience';
+import Experience from './components/experience';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-import Contact from './components/Contact';
+import Contact from './components/contact';
 import './App.css';
 
 function App() {
