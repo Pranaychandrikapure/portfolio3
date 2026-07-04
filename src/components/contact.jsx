@@ -69,7 +69,7 @@ const Contact = () => {
         </p>
 
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', marginBottom: '4rem' }}>
-          <div style={{ display: 'flex', gap: '1.5rem', width: '100%' }}>
+          <div className="contact-form-row" style={{ display: 'flex', gap: '1.5rem', width: '100%' }}>
             <input
               type="text"
               name="name"
