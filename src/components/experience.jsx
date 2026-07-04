@@ -1,78 +1,77 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import React, { useRef } from 'react';
+import { motion, useScroll, useSpring } from 'framer-motion';
 
-import udmey_certificate from '../assets/images/Udmey_certificate.png';
-import oasis_infobyte from '../assets/images/Oasis_infobytes.png';
-import prajwalan from '../assets/images/prajwalan.png';
-import itsaWinner from '../assets/images/itsa_winner12.png';
-import neml from '../assets/images/NeML.png';
-
-const experiences = [
-  {
-    image: neml,
-    quote: "I am currently working in NCDEX e-Market Ltd. (NeML) with 8 months of internship and almost one year of total experience. I am working on a scalable eAuction platform for commodity trading (chana, pulses, scrap), handling core trading functionalities including bid management and the auction lifecycle, ensuring high availability and real-time processing.",
-    title: "Software Engineer / Intern",
-    subtitle: "NCDEX e-Market Ltd. | https://www.neml.in/"
-  },
-  {
-    image: prajwalan,
-    quote: "I am part of Team Nayaan, which recently published its patent. Over the past year, I have primarily worked on the OCR component of the Nayaan device and have also contributed to the frontend website using Three.js. Where Nayaan achieved lots of prize and also published the patent of Nayaan",
-    title: "Nayaan",
-    subtitle: "Founder Bhavesh Chaudhari (Senior) | https://nayaan.vercel.app/"
-  },
-  {
-    image: itsaWinner,
-    quote: "I am winner of ITSA (Information Technology Student Association) project expo competition with my friend Shivendoo and Team Nayaan. This competition held in Government College of Engineering, Amravati.",
-    title: "Winner",
-    subtitle: "ITSA Project Expo"
-  },
-  {
-    image: udmey_certificate,
-    quote: "I completed a Tkinter course on Udemy, where I gained expertise in GUI desktop application development using Python's Tkinter library. As part of the course, I developed a cross-platform calculator application that can run independently on Windows, iOS, and Linux, providing a seamless experience across different operating systems.",
-    title: "Certificate",
-    subtitle: "Udemy"
-  },
-  {
-    image: oasis_infobyte,
-    quote: "I successfully completed a virtual internship at Oasis Infobyte, where I was assigned tasks focused on frontend development. Upon the successful submission of these tasks, I was awarded a certificate by the company, recognizing my accomplishments and skills in this area.",
-    title: "Virtual Internship",
-    subtitle: "Oasis Infobyte"
-  }
-];
+const ExperienceCard = ({ role, company, date, descriptions }) => {
+  return (
+    <motion.div 
+      className="experience-card glass"
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.6 }}
+      style={{ padding: '2rem', marginBottom: '2rem' }}
+    >
+      <div className="experience-dot" />
+      <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{role}</h3>
+      <h4 style={{ color: 'var(--accent-cyan)', marginBottom: '1rem' }}>{company} <span style={{ color: '#666', fontSize: '0.9rem', marginLeft: '10px' }}>{date}</span></h4>
+      <ul style={{ color: 'var(--text-secondary)', lineHeight: '1.6', paddingLeft: '20px', margin: 0 }}>
+        {descriptions.map((desc, i) => (
+          <li key={i} style={{ marginBottom: '8px' }}>{desc}</li>
+        ))}
+      </ul>
+    </motion.div>
+  );
+};
 
 const Experience = () => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start center", "end center"]
+  });
+
+  const scaleY = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
   return (
-    <section className="section-container" id="experience">
-      <h2 className="section-title text-gradient">Experience & Certificates</h2>
-      
-      <div className="reveal" style={{ transitionDelay: '0.2s' }}>
-        <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-          spaceBetween={30}
-          slidesPerView={1}
-          navigation
-          pagination={{ clickable: true }}
-          autoplay={{ delay: 5000, disableOnInteraction: false }}
-          className="mySwiper"
-          style={{ paddingBottom: '3rem' }}
-        >
-          {experiences.map((exp, index) => (
-            <SwiperSlide key={index}>
-              <div className="experience-card glass-panel">
-                <img src={exp.image} alt={exp.title} className="exp-img" />
-                <div className="exp-content">
-                  <p className="exp-quote">"{exp.quote}"</p>
-                  <h3 className="exp-title">{exp.title}</h3>
-                  <h5 className="exp-subtitle">{exp.subtitle}</h5>
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+    <section id="experience" ref={ref}>
+      <motion.h2 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        style={{ fontSize: '3rem', marginBottom: '4rem' }}
+      >
+        Work <span className="text-gradient">Experience</span>
+      </motion.h2>
+
+      <div className="experience-container">
+        <div className="timeline-line" />
+        <motion.div className="timeline-progress" style={{ scaleY, transformOrigin: "top" }} />
+        
+        <ExperienceCard 
+          role="Management Trainee"
+          company="NeML (NCDEX e-Markets Ltd.)"
+          date="Aug 2025 - Present"
+          descriptions={[
+            "Working on a scalable eAuction platform for commodity trading (chana, pulses, scrap), including the NCDF platform for managing NCDF auctions.",
+            "Handling core trading functionalities including bid management and auction lifecycle.",
+            "Ensuring high availability and real-time processing for large-scale auction operations."
+          ]}
+        />
+        
+        <ExperienceCard 
+          role="Software Developer Intern"
+          company="NCDEX e-Markets Ltd., Nagpur"
+          date="Jan 2025 - Aug 2025"
+          descriptions={[
+            "Worked on the ELV certificate trading portal using Spring MVC and AngularJS.",
+            "Contributed to the eAuction for commodity trading (scrap, chana, pulses) using Angular 14, Spring Boot, and PostgreSQL.",
+            "Involved in full-stack development and module integration for trading workflows."
+          ]}
+        />
       </div>
     </section>
   );

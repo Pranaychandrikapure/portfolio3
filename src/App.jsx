@@ -1,43 +1,47 @@
 import React, { useEffect } from 'react';
-import Navbar from './components/navbr';
-import Project from './components/project';
-import Experience from './components/experience';
-import Contact from './components/contact';
-import Footer from './components/footer';
-import Canvas from './components/canvas';
-
+import Lenis from 'lenis';
+import Background from './components/Background';
+import Hero from './components/Hero';
+import Experience from './components/Experience';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 import './App.css';
 
 function App() {
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-        }
-      });
-    }, { threshold: 0.1 });
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+      direction: 'vertical', // vertical, horizontal
+      gestureDirection: 'vertical', // vertical, horizontal, both
+      smooth: true,
+      mouseMultiplier: 1,
+      smoothTouch: false,
+      touchMultiplier: 2,
+      infinite: false,
+    })
 
-    document.querySelectorAll('.reveal').forEach((el) => {
-      observer.observe(el);
-    });
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
 
-    return () => observer.disconnect();
+    requestAnimationFrame(raf)
+
+    return () => {
+      lenis.destroy();
+    }
   }, []);
 
   return (
     <div className="app-container">
-      <Canvas />
-      
-      <div className="content-wrapper">
-        <Navbar />
-        <main>
-          <Project />
-          <Experience />
-          <Contact />
-        </main>
-        <Footer />
-      </div>
+      <Background />
+      <Hero />
+      <Experience />
+      <Skills />
+      <Projects />
+      <Contact />
     </div>
   );
 }

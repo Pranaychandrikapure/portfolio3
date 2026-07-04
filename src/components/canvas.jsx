@@ -15,7 +15,7 @@ const Canvas = () => {
       }, []);
     return (
         <div className="canv">
-            <canvas ></canvas>
+            <canvas id="fluid-canvas"></canvas>
             {/* Add a minimal promo for testing */}
             <div className="promo">
                 <div className="promo-middle">
