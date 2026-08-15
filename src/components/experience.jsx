@@ -92,7 +92,17 @@ const Experience = () => {
     "Supported production issue analysis, debugging, and implementation of fixes across trading and auction modules."
   ]}
 />
-
+        {/* Software Developer Intern */}
+        <ExperienceCard
+          role="Software Developer Intern"
+          company="NCDEX e-Markets Ltd., Nagpur"
+          date="Jan 2025 - Aug 2025"
+          descriptions={[
+            "Worked on the ELV certificate trading portal using Spring MVC and AngularJS.",
+            "Contributed to the eAuction for commodity trading including scrap, chana, and pulses using Angular 14, Spring Boot, and PostgreSQL.",
+            "Involved in full-stack development and module integration for trading workflows."
+          ]}
+        />
       </div>
     </section>
   );
